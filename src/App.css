@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  font-size: 16px;
+  --color-neutral-900: hsl(0, 0%, 0%);
+  --color-neutral-850: hsl(0, 0%, 10%);
+  --color-neutral-800: hsl(0, 0%, 20%);
+  --color-neutral-750: hsl(0, 0%, 30%);
+  --color-neutral-700: hsl(0, 0%, 40%);
+  --color-neutral-600: hsl(0, 0%, 60%);
+  --color-neutral-500: hsl(0, 0%, 80%);
+  --color-neutral-400: hsl(0, 0%, 100%);
+
+  --color-accent-1: hsl(200, 100%, 60%);
+  --color-accent-2: hsl(130, 100%, 60%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100vw;
   min-height: 100vh;
+  background-color: var(--color-neutral-900);
+  color: var(--color-neutral-400);
+  padding: 0 2rem 12rem 2rem;
+}
+
+header {
+  margin-top: 2rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.searchBox {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.searchBox input {
+  color: var(--color-neutral-400);
+  background-color: var(--color-neutral-850);
+  border: none;
+  outline: none;
+  padding: .5rem 1rem;
+  width: 40vw;
+  border-radius: 99px;
+  transition: width 300ms ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.searchBox svg {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 1000px) {
+  .searchBox input {
+    width: 35vw;
   }
 }

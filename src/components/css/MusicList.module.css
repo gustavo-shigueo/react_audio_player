@@ -1,0 +1,37 @@
+.musicList {
+  min-height: 90vh;
+  background-color: var(--color-neutral-850);
+  width: 100%;
+  margin: 4rem 0;
+  border-radius: 2rem;
+  list-style: none;
+  text-decoration: none;
+  padding-top: 1rem;
+}
+.musicList .musicItem {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  margin: 0 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.musicList .musicItem:not(:first-of-type) {
+  border-top: 1px solid var(--color-neutral-400);
+}
+.musicList .musicItem .icon {
+  padding: 1rem;
+  background-color: var(--color-neutral-700);
+  margin-right: 2rem;
+  border-radius: 0.75rem;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+}
+.musicList .musicItem.active {
+  color: var(--color-accent-1);
+  font-weight: bold;
+}
+.musicList .musicItem.active .icon {
+  background-color: var(--color-neutral-750);
+}
