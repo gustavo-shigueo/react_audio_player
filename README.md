@@ -19,4 +19,4 @@
   </ul>
 </ol>
 
-You will need to put .mp3 files in the `/public/audio` folder 
+You will need to put .mp3 files in the `/public/audio` folder *before building*
