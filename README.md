@@ -6,10 +6,8 @@
 <ol>
   <h5><li>Build the app and serve it locally</li></h5>
   <ul>
-    <li>Run <code>npm run build</code></li>
-    <li>Run <code>npm i -g serve</code></li>
-    <li>Run <code>serve -s build</code></li>
-    <li>Open your browser on <a href="http://localhost:5000">http://localhost:5000</a></li>
+    <li><strong>If you are using Windows Command Line (CMD),</strong> run <code>npm run serveCMD</code> from the root folder</li>
+    <li>Otherwise (Windows Powershell, Linux Bash, MacOS Terminal...), run <code>npm run serve</code> from the root folder</li>
   </ul>
 
   <h5><li>Run the app without building</li></h5>
