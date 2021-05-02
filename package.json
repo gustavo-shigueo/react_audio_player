@@ -19,8 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "react-scripts build; serve -s build; cd api; node .",
-    "serveCMD": "react-scripts build & serve -s build & cd api & node ."
+    "serve": "serve -s build",
+    "api": "cd api; node .",
+    "apiCMD": "cd api & node ."
   },
   "eslintConfig": {
     "extends": [
